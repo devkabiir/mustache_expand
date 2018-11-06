@@ -1,7 +1,7 @@
 # Mustache Expand
 
-[![License](https://img.shields.io/github/license/devkabiir/mustache_expand.svg)][LICENSE]
-[![Travis build](https://img.shields.io/travis/com/devkabiir/mustache_expand.svg)][repo]
+[![License](https://img.shields.io/github/license/devkabiir/scaffold.svg)][LICENSE]
+[![Travis build](https://img.shields.io/travis/com/devkabiir/scaffold.svg)][repo]
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)][commitizen]
 [![Commitizen style](https://img.shields.io/badge/commitizen--style-emoji-brightgreen.svg)][cz-emoji]
 
@@ -14,13 +14,13 @@ Given a context, expands mustache templates with it
 ### As a global package
 
 ```sh
-pub global activate -sgit https://www.github.com/devkabiir/mustache_expand
+pub global activate -sgit https://www.github.com/devkabiir/scaffold
 ```
 
 Give it a `context.json`, path to template and output directory
 
 ```sh
-mustache_expand --context=template.context.json --template=<path/to/template> .
+scaffold --context=template.context.json --template=<path/to/template> .
 ```
 
 This will expand to the current working directory
@@ -37,12 +37,12 @@ the previous step
 ```yaml
 dependencies:
   ...
-  mustache_expand:
-    git: https://www.github.com/devkabiir/mustache_expand
+  scaffold:
+    git: https://www.github.com/devkabiir/scaffold
 ```
 
 ```dart
-import 'package:mustache_expand/mustache_expand.dart' as mustache_expand;
+import 'package:scaffold/scaffold.dart' as scaffold;
 
 void main() => print();
 
@@ -52,10 +52,10 @@ void main() => print();
 
 - :fork_and_knife: Fork this repo
 - Clone your forked version  
-  `git clone https://github.com/<you>/mustache_expand.git`
+  `git clone https://github.com/<you>/scaffold.git`
 
 - :heavy_plus_sign: Add this repo as a remote  
-  `git remote add upstream https://github.com/devkabiir/mustache_expand.git`
+  `git remote add upstream https://github.com/devkabiir/scaffold.git`
 
 - :arrow_double_up: Make sure you have recent changes  
   `git fetch upstream`
@@ -101,10 +101,10 @@ Copyright (C) 2018 Dinesh Ahuja <dev@kabiir.me>
 
 Please see the [LICENSE] file in this repository for the full text
 
-[repo]: https://github.com/devkabiir/mustache_expand
+[repo]: https://github.com/devkabiir/scaffold
 [guidelines]: https://www.dartlang.org/guides/language/effective-dart/style
 [commitizen]: http://commitizen.github.io/cz-cli/
 [cz-emoji]: https://github.com/ngryman/cz-emoji
 [signing-commits]: https://help.github.com/articles/signing-commits/
-[issue-tracker]: https://www.github.com/devkabiir/mustache_expand/issues
-[LICENSE]: https://github.com/devkabiir/mustache_expand/blob/master/LICENSE
+[issue-tracker]: https://www.github.com/devkabiir/scaffold/issues
+[LICENSE]: https://github.com/devkabiir/scaffold/blob/master/LICENSE

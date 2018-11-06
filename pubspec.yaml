@@ -1,7 +1,7 @@
-name: mustache_expand
+name: scaffold
 description: Given a context, expands mustache templates with it
 version: 0.0.1
-homepage: https://www.github.com/devkabiir/mustache_expand
+homepage: https://www.github.com/devkabiir/scaffold
 author: Dinesh Ahuja <dev@kabiir.me>
 documentation:
 

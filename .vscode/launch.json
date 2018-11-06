@@ -8,7 +8,7 @@
       "name"   : "Dart",
       "type"   : "dart",
       "request": "launch",
-      "program": "bin/mustache_expand.dart"
+      "program": "bin/scaffold.dart"
     }
   ]
 }

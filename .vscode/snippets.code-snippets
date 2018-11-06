@@ -3,7 +3,7 @@
     "scope": "dart",
     "prefix": "header",
     "body": [
-      "// mustache_expand, Copyright (C) $CURRENT_YEAR ${1| ,Dinesh Ahuja <dev@kabiir.me>|}.",
+      "// scaffold, Copyright (C) $CURRENT_YEAR ${1| ,Dinesh Ahuja <dev@kabiir.me>|}.",
       "// See the included LICENSE file for more info.",
       "$0"
     ],
@@ -45,7 +45,7 @@
     "scope": "dart",
     "prefix": "todo",
     "body": [
-      "// TODO(${1| ,devkabiir|}): $2, https://www.github.com/devkabiir/mustache_expand/issues/$3",
+      "// TODO(${1| ,devkabiir|}): $2, https://www.github.com/devkabiir/scaffold/issues/$3",
       "$0"
     ],
     "description": "adds a linter rule with reporting level"
