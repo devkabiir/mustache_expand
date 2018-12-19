@@ -1,0 +1,13 @@
+# if multiple templates where specified while scaffolding, specify if this
+# template should have it's own directory, the template will be expanded inside
+# {{project_name}}/web
+#
+# the output directory will be {{project_name}} otherwise
+output: packages/
+name: package
+
+include:
+  - base: ../base
+  - vscode_snips: ../vscode_snips
+  - license: ../license
+  - github_docs: ../github_docs
