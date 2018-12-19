@@ -9,8 +9,19 @@ environment:
   sdk: '>=2.0.0 <3.0.0'
 
 dependencies:
+  recase: ^2.0.0
+  file: ^5.0.0
+  path: ^1.0.0
+  mustache: ^1.0.0
+  yaml: ^2.0.0
+  # superpower: ^0.4.0
+  built_value: ^6.0.0
+  logging: <1.0.0
+  yamlicious: <1.0.0
 
 dev_dependencies:
   test: ^1.0.0
   pre_commit:
     git: https://www.github.com/devkabiir/pre_commit
+  built_value_generator: ^6.0.0
+  build_runner: ^1.0.0
