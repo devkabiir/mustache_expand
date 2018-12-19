@@ -9,7 +9,9 @@ analyzer:
     implicit-dynamic: false
 
   # Exclude from being analysed
-  exclude: [build/**]
+  exclude:
+    - build/**
+    - templates/**
 
   # Change lint report level (ignore, warning, error)
   errors:
