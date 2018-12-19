@@ -5,10 +5,45 @@
   "version"       : "0.2.0",
   "configurations": [
     {
-      "name"   : "Dart",
-      "type"   : "dart",
-      "request": "launch",
-      "program": "bin/scaffold.dart"
+      "name"                  : "Dart",
+      "type"                  : "dart",
+      "request"               : "launch",
+      "program"               : "bin/scaffold.dart",
+      "enableAsserts"         : true,
+      "internalConsoleOptions": "openOnSessionStart",
+      "args"                  : [
+        "${input:command}",
+        "${input:outputDir}",
+        "${input:flags}",
+      ],
+      "postDebugTask": "clearBuildDir",
+    }
+  ],
+  "inputs": [
+    {
+      "id"         : "command",
+      "description": "Enter command name",
+      "default"    : "create",
+      "type"       : "pickString",
+      "options"    : [
+        "create",
+        "install",
+        "watch",
+        "add",
+        "generate",
+      ]
+    },
+    {
+      "id"         : "outputDir",
+      "description": "Output directory if any",
+      "default"    : "build\\my_app",
+      "type"       : "promptString"
+    },
+    {
+      "id"         : "flags",
+      "description": "Enter flags if any",
+      "default"    : "-t./templates/dart_package",
+      "type"       : "promptString"
     }
   ]
 }
