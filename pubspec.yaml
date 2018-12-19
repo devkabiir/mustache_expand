@@ -8,7 +8,11 @@ documentation: # default documentation
 environment:
   sdk: '>=2.0.0 <3.0.0'
 
+executables:
+  scaffold: scaffold
+
 dependencies:
+  args: ^1.0.0
   recase: ^2.0.0
   file: ^5.0.0
   path: ^1.0.0

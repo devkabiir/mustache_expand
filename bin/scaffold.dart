@@ -1,6 +1,6 @@
-// scaffold, Copyright (C) 2018 Dinesh Ahuja <dev@kabiir.me>.
+// scaffold, Copyright (C) 2018-Present Dinesh Ahuja <dev@kabiir.me>.
 // See the included LICENSE file for more info.
 
-// import 'package:scaffold/scaffold.dart';
+import 'package:scaffold/cli.dart' as cli;
 
-void main([List<String> args]) {}
+void main([List<String> args]) => cli.run(args);
