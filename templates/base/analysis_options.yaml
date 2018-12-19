@@ -1,0 +1,52 @@
+analyzer:
+
+  language:
+    # requried for flutter
+    enableSuperMixins: true
+
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+  # Exclude from being analysed
+  exclude: [build/**]
+
+  # Change lint report level (ignore, warning, error)
+  errors:
+    always_declare_return_types: error
+    always_put_control_body_on_new_line: error
+    always_put_required_named_parameters_first: error
+    always_require_non_null_named_parameters: error
+    always_specify_types: error
+    annotate_overrides: error
+    avoid_positional_boolean_parameters: error
+    dead_code: error
+    parameter_assignments: error
+    prefer_final_fields: error
+    prefer_final_locals: error
+    prefer_interpolation_to_compose_strings: error
+    prefer_is_empty: error
+    prefer_is_not_empty: error
+    prefer_single_quotes: warning
+    sort_constructors_first: error
+    sort_unnamed_constructors_first: error
+    super_goes_last: error
+    todo: info
+    type_annotate_public_apis: error
+    type_init_formals: error
+    unnecessary_this: error
+    unused_element: error
+    unused_import: error
+    unused_local_variable: error
+    uri_has_not_been_generated: ignore
+    use_string_buffers: warning
+    use_to_and_as_if_applicable: warning
+    void_checks: error
+
+# Lint rules and documentation, see http://dart-lang.github.io/linter/lints
+# Enable/Disable to suite your needs
+linter:
+  rules:
+{{#linter_rules}}
+    - {{name}}
+{{/linter_rules}}
