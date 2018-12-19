@@ -1,0 +1,85 @@
+# if multiple templates where specified while scaffolding, specify if this
+# template should have it's own directory, the template will be expanded inside
+# {{project_name}}/web
+#
+# the output directory will be {{project_name}} otherwise
+output: web
+name: vscode_snips
+
+include_context:
+  - base: ../base
+
+context:
+  #  This override only removes the last sepperator
+  vscode_snips:
+    - name: License header
+      prefix: license-header
+      scope: ''
+      body:
+        - '$LINE_COMMENT {{project_name}}, Copyright (C) $CURRENT_YEAR-Present ${1| {{#authors}},{{full_name}} <{   {email}}>{{/authors}}|}.'
+        - '$LINE_COMMENT See the included LICENSE file for more info.'
+        - '$0'
+      description: adds license header
+
+    - name: Built Class
+      scope: dart
+      prefix: built-class
+      body:
+        - 'abstract class $1 implements Built<$1, $1Builder> {'
+        - '$1._();'
+        - 'static Serializer<$1> get serializer => _$${1/([A-Z])(.*)/${1:/downcase}$2/g}Serializer;'
+        - 'factory $1([void updates($1Builder b)'
+        - ']) = _$$1;'
+        - '$0'
+        - '}'
+      description: create a built value class
+
+    - name: Create library
+      prefix: library
+      scope: dart
+      body:
+        - library $1;
+        - ''
+        - import 'package:logging/logging.dart';
+        - ''
+        - /// Logger for `$1`
+        - final Logger logger = Logger('$1');
+        - $0
+
+      description: Creates a library with a logger
+
+    - name: Ignore lint
+      scope: dart
+      prefix: ignore
+      body:
+        - '// ignore: ${1| {{#linter_rules}},{{name}}{{/linter_rules}}|}'
+      description: adds a comment to ignore lint rule for next line
+
+    - name: Ignore lint from clipboard
+      scope: dart
+      prefix: ignore-paste
+      body:
+        - '// ignore: $CLIPBOARD'
+      description: adds a comment to ignore lint rule for next line from clipboard
+
+    - name: Linter Rules
+      scope: yaml
+      prefix: add-rule
+      body:
+        - '- ${1| {{#linter_rules}},{{name}}{{/linter_rules}}|}'
+      description: adds a linter rule
+
+    - name: Linter Rule with level
+      scope: yaml
+      prefix: add-rule-level
+      body:
+        - '${1| {{#linter_rules}},{{name}}{{/linter_rules}}|} : ${2|ignore,warning,error|}'
+      description: adds a linter rule with reporting level
+
+    - name: Flutter TODO
+      scope: ''
+      prefix: todo
+      body:
+        - '$LINE_COMMENT TODO(${1| {{#authors}},{{display_name}}{{/authors}}|}): $2, {{github_repo_url}}  /issues/$3'
+        - '$0'
+      description: adds a flutter style todo comment
