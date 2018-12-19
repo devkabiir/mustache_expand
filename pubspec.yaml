@@ -1,9 +1,9 @@
 name: scaffold
-description: Given a context, expands mustache templates with it
+description: CLI app for assisting dart developers
 version: 0.0.1
 homepage: https://www.github.com/devkabiir/scaffold
 author: Dinesh Ahuja <dev@kabiir.me>
-documentation:
+documentation: # default documentation
 
 environment:
   sdk: '>=2.0.0 <3.0.0'

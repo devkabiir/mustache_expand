@@ -1,13 +1,16 @@
-# Mustache Expand
+# [WIP] Scaffold
 
-[![License](https://img.shields.io/github/license/devkabiir/scaffold.svg)][LICENSE]
-[![Travis build](https://img.shields.io/travis/com/devkabiir/scaffold.svg)][repo]
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)][commitizen]
-[![Commitizen style](https://img.shields.io/badge/commitizen--style-emoji-brightgreen.svg)][cz-emoji]
+[![LICENSE][LICENSE-shield]][LICENSE]
+[![Build status][travis-shield]][repo]
+[![Code coverage][code-coverage-shield]][repo]
+[![Pub version][pub-version-shield]][pub-link]
+[![Commitizen friendly][commitizen-shield]][commitizen]
+[![Commitizen style][commitizen-style-shield]][cz-emoji]
+[![Maintained][maintenance-shield]][repo]
 
 ## About
 
-Given a context, expands mustache templates with it
+CLI app for assisting dart developers
 
 ## Usage
 
@@ -17,20 +20,13 @@ Given a context, expands mustache templates with it
 pub global activate -sgit https://www.github.com/devkabiir/scaffold
 ```
 
-Give it a `context.json`, path to template and output directory
+Give it a path to template and output directory
 
 ```sh
-scaffold --context=template.context.json --template=<path/to/template> .
+scaffold create my_app --template=<path/to/template>
 ```
 
-This will expand to the current working directory
-
-By default it takes the `context.json` from the current working directory if found,
-or takes it from the `<user-directory>/<template_name>.context.json` if present, otherwise
-you can specify it via the `--context` flag
-
-If `<user-directory>/mustache.context.json` exists, it gets _merged_ with the `context.json` found in
-the previous step
+This will expand to the `my_app` directory
 
 ### As a dependency
 
@@ -97,14 +93,26 @@ Please file feature requests and bugs at the [issue-tracker].
 
 ## License
 
-Copyright (C) 2018 Dinesh Ahuja <dev@kabiir.me>
+Copyright (C) 2018-Present Dinesh Ahuja <dev@kabiir.me>.
 
 Please see the [LICENSE] file in this repository for the full text
 
+<!-- Shield aliases -->
+[LICENSE-shield]: https://img.shields.io/badge/license-MIT-brightgreen.svg
+[travis-shield]: https://img.shields.io/travis/com/devkabiir/scaffold.svg
+[code-coverage-shield]: https://img.shields.io/codecov/c/github/devkabiir/scaffold.svg
+[pub-version-shield]: https://img.shields.io/pub/v/scaffold.svg
+[commitizen-shield]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[commitizen-style-shield]: https://img.shields.io/badge/commitizen--style-emoji-brightgreen.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+
+
+<!-- Link aliases -->
+[cz-emoji]: https://github.com/ngryman/cz-emoji
+[commitizen]: http://commitizen.github.io/cz-cli/
+[pub-link]: https://pub.dartlang.org/packages/scaffold
 [repo]: https://github.com/devkabiir/scaffold
 [guidelines]: https://www.dartlang.org/guides/language/effective-dart/style
-[commitizen]: http://commitizen.github.io/cz-cli/
-[cz-emoji]: https://github.com/ngryman/cz-emoji
 [signing-commits]: https://help.github.com/articles/signing-commits/
-[issue-tracker]: https://www.github.com/devkabiir/scaffold/issues
+[issue-tracker]: https://github.com/devkabiir/scaffold/issues
 [LICENSE]: https://github.com/devkabiir/scaffold/blob/master/LICENSE
