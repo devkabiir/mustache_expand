@@ -1,0 +1,4 @@
+name: license
+
+include_context:
+  - base: ../base
