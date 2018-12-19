@@ -1,0 +1,7 @@
+# if multiple templates where specified while scaffolding, specify if this
+# template should have it's own directory, the template will be expanded inside
+# {{project_name}}/web
+#
+# the output directory will be {{project_name}} otherwise
+output: web
+name: github_docs
