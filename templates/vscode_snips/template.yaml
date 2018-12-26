@@ -80,6 +80,6 @@ context:
       scope: ''
       prefix: todo
       body:
-        - '$LINE_COMMENT TODO(${1| {{#authors}},{{display_name}}{{/authors}}|}): $2, {{github_repo_url}}  /issues/$3'
+        - '$LINE_COMMENT TODO(${1| {{#authors}},{{display_name}}{{/authors}}|}): $2, {{github_repo_url}}/issues/$3'
         - '$0'
       description: adds a flutter style todo comment
