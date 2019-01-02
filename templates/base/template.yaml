@@ -51,7 +51,7 @@ context:
       link_alias: repo
     - alias: code-coverage-shield
       alt_text: Code coverage
-      path: '/codecov/c/github/{{github_username}}/{{project_name}}.svg'
+      path: '/codecov/c/github/{{github_username}}/{{project_name}}/master.svg'
       link_alias: repo
     - alias: pub-version-shield
       alt_text: Pub version
