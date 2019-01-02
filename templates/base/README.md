@@ -33,9 +33,9 @@
 
 - :arrows_clockwise: Make a pull request
 
-## Git
+## :octocat: Git
 
-- :white_check_mark: Sign all commits. Learn about [signing-commits]
+- :heavy_check_mark: Sign all commits. Learn about [signing-commits]
 - Use [commitizen] with [cz-emoji] adapter
 - Check existing commits to get an idea
 - Run the pre_commit script from project root `pub run pre_commit`
