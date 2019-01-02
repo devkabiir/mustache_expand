@@ -14,6 +14,10 @@
 
 This project follows [Semantic Versioning 2.0.0][semver]
 
+## :newspaper: Changelog
+
+Changes for latest release at [github-releases]
+
 ## :busts_in_silhouette: Contributing
 
 - :fork_and_knife: Fork this repo
