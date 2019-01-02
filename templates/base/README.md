@@ -49,7 +49,7 @@
 - Maintain consistencies using included `.editorconfig`
 - Everything else as per standard dart [guidelines]
 
-## Testing
+## :white_check_mark: Testing
 
 - Add tests for each new addition/feature
 - Do not remove/change tests when refactoring
