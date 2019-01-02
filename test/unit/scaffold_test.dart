@@ -1,7 +1,7 @@
 // scaffold, Copyright (C) 2018-Present Dinesh Ahuja <dev@kabiir.me>.
 // See the included LICENSE file for more info.
 
-library scaffold_test;
+library scaffold_test.unit.core;
 
 import 'dart:io';
 
@@ -12,7 +12,7 @@ import 'package:scaffold/scaffold.dart';
 import 'package:test/test.dart';
 import 'package:yaml/yaml.dart';
 
-import 'utils.dart';
+import '../utils.dart';
 
 void main() {
   logging();
@@ -259,8 +259,8 @@ void main() {
   });
 }
 
-/// Logger for `scaffold_test`
-final Logger logger = Logger('scaffold_test.core');
+/// Logger for `scaffold_test.unit.core`
+final Logger logger = Logger('scaffold_test.unit.core');
 
 void testFileMatches(File file01, File file02) {
   expect(
