@@ -22,6 +22,10 @@ Changes for latest release at [github-releases]
 
 - [ ] Prepare v1.0.0
 
+## :medal_sports: Principle
+
+This project follows [The Twelve-Factor App](https://12factor.net/) principle
+
 ## :busts_in_silhouette: Contributing
 
 - :fork_and_knife: Fork this repo
