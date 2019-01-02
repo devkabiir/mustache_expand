@@ -1,7 +1,7 @@
 // scaffold, Copyright (C) 2018-Present Dinesh Ahuja <dev@kabiir.me>.
 // See the included LICENSE file for more info.
 
-library scaffold_test.cli;
+library scaffold_test.integration.cli;
 
 import 'package:args/command_runner.dart';
 import 'package:logging/logging.dart';
@@ -10,7 +10,7 @@ import 'package:scaffold/src/commands/create.dart';
 import 'package:scaffold/src/exit_codes.dart';
 import 'package:test/test.dart';
 
-import 'utils.dart';
+import '../utils.dart';
 
 void main() {
   group('cli', () {
@@ -104,5 +104,5 @@ void main() {
   });
 }
 
-/// Logger for `scaffold_test.cli`
-final Logger logger = Logger('scaffold_test.cli');
+/// Logger for `scaffold_test.integration.cli`
+final Logger logger = Logger('scaffold_test.integration.cli');
