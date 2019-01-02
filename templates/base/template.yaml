@@ -47,7 +47,7 @@ context:
       link_alias: LICENSE
     - alias: travis-shield
       alt_text: Build status
-      path: '/travis/com/{{github_username}}/{{project_name}}.svg'
+      path: '/travis/com/{{github_username}}/{{project_name}}/master.svg'
       link_alias: repo
     - alias: code-coverage-shield
       alt_text: Code coverage
