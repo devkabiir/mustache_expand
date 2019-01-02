@@ -70,7 +70,6 @@ Please see the [LICENSE] file in this repository for the full text
 [{{alias}}]: https://img.shields.io{{path}}
 {{/ shields}}
 
-
 <!-- Link aliases -->
 {{# links}}
 [{{alias}}]: {{url}}
