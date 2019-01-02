@@ -44,7 +44,7 @@
 - Limit message length per line to 72 characters (excluding space required for linking issues/commits)
 - Add commit description if message isn't enough for explaining changes
 
-## Code style
+## :lipstick: Code style
 
 - Maintain consistencies using included `.editorconfig`
 - Everything else as per standard dart [guidelines]
