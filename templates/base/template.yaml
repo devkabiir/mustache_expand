@@ -39,6 +39,8 @@ context:
       url: '{{github_repo_url}}/issues'
     - alias: LICENSE
       url: '{{github_repo_url}}/blob/master/LICENSE'
+    - alias: semver
+      url: https://semver.org/
 
   shields:
     - alias: LICENSE-shield

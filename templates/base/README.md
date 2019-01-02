@@ -10,6 +10,10 @@
 
 ## :book: Usage
 
+## :traffic_light: Versioning
+
+This project follows [Semantic Versioning 2.0.0][semver]
+
 ## :busts_in_silhouette: Contributing
 
 - :fork_and_knife: Fork this repo
