@@ -1,8 +1,6 @@
 analyzer:
 
   language:
-    # requried for flutter
-    enableSuperMixins: true
 
   strong-mode:
     implicit-casts: false
