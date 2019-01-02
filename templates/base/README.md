@@ -59,7 +59,7 @@
 
 Please file feature requests and bugs at the [issue-tracker].
 
-## License
+## :scroll: License
 
 Copyright (C) {{currentYear}}-Present {{#authors}}{{full_name}} <{{email}}>{{/authors}}.
 
