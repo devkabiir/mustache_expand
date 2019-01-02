@@ -10,6 +10,8 @@ build/
 # Directory created by dartdoc
 doc/api/
 
+.env
+
 templates/**/pubspec.yaml
 
 *.log
