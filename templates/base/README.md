@@ -18,6 +18,10 @@ This project follows [Semantic Versioning 2.0.0][semver]
 
 Changes for latest release at [github-releases]
 
+## :memo: Milestones
+
+- [ ] Prepare v1.0.0
+
 ## :busts_in_silhouette: Contributing
 
 - :fork_and_knife: Fork this repo
