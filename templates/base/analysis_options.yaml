@@ -15,7 +15,7 @@ analyzer:
     always_put_control_body_on_new_line: error
     always_put_required_named_parameters_first: error
     always_require_non_null_named_parameters: error
-    always_specify_types: error
+    # always_specify_types: error
     annotate_overrides: error
     avoid_positional_boolean_parameters: error
     dead_code: error
@@ -26,8 +26,8 @@ analyzer:
     prefer_is_empty: error
     prefer_is_not_empty: error
     prefer_single_quotes: warning
-    sort_constructors_first: error
-    sort_unnamed_constructors_first: error
+    # sort_constructors_first: error
+    # sort_unnamed_constructors_first: error
     super_goes_last: error
     todo: info
     type_annotate_public_apis: error
