@@ -26,7 +26,7 @@ part 'src/render.dart';
 /// Logging level `FAILED` (value = 1400).
 const Level failedLevel = Level('FAILED', 1400);
 
-/// Logging level `SUCCESS` (value = 4000).
+/// Logging level `SUCCESS` (value = 200).
 const Level successLevel = Level('SUCCESS', 200);
 
 /// Logger for `scaffold.core`
