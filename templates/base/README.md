@@ -8,7 +8,7 @@
 
 {{description}}
 
-## Usage
+## :book: Usage
 
 ## :busts_in_silhouette: Contributing
 
