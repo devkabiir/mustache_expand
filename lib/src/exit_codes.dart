@@ -1,3 +1,6 @@
+// scaffold, Copyright (C) 2018-Present Dinesh Ahuja <dev@kabiir.me>.
+// See the included LICENSE file for more info.
+
 library scaffold_cli.exit_message;
 
 import 'dart:io' show exitCode;
