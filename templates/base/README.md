@@ -55,7 +55,7 @@
 - Do not remove/change tests when refactoring
   - unless fixing already broken test.
 
-## Features and bugs
+## :sparkles: Features and :bug:bugs
 
 Please file feature requests and bugs at the [issue-tracker].
 
