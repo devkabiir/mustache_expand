@@ -4,7 +4,7 @@
 [![{{alt_text}}][{{alias}}]][{{link_alias}}]
 {{/ shields}}
 
-## About
+## :rocket: About
 
 {{description}}
 
