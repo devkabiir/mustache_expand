@@ -10,17 +10,17 @@
 
 ## Usage
 
-## Contributing
+## :busts_in_silhouette: Contributing
 
 - :fork_and_knife: Fork this repo
 
-- Clone your forked version  
+- :arrow_down: Clone your forked version  
   `git clone https://github.com/<you>/{{project_name}}.git`
 
 - :heavy_plus_sign: Add this repo as a remote  
   `git remote add upstream {{github_repo_url}}.git`
 
-- :arrow_double_up: Make sure you have recent changes  
+- :arrow_double_down: Make sure you have recent changes  
   `git fetch upstream`
 
 - :sparkles: Make a new branch with your proposed changes/fixes/additions  
@@ -28,10 +28,10 @@
 
 - :bookmark_tabs: Make sure you follow guidelines for [Git](#git)
 
-- Push your changes  
+- :arrow_double_up: Push your changes  
   `git push origin name_of_your_branch`
 
-- Make a pull request
+- :arrows_clockwise: Make a pull request
 
 ## Git
 
