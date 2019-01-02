@@ -76,9 +76,9 @@ context:
     - name: always_put_control_body_on_new_line
     - name: always_put_required_named_parameters_first
     - name: always_require_non_null_named_parameters
-    - name: always_specify_types
+    - name: '# always_specify_types'
     - name: annotate_overrides
-    - name: avoid_annotating_with_dynamic
+    - name: '# avoid_annotating_with_dynamic'
     - name: avoid_as
     - name: avoid_bool_literals_in_conditional_expressions
     - name: avoid_catches_without_on_clauses
@@ -135,7 +135,7 @@ context:
     - name: no_duplicate_case_values
     - name: non_constant_identifier_names
     - name: null_closures
-    - name: omit_local_variable_types
+    - name: '# omit_local_variable_types'
     - name: one_member_abstracts
     - name: only_throw_errors
     - name: overridden_fields
@@ -173,9 +173,9 @@ context:
     - name: public_member_api_docs
     - name: recursive_getters
     - name: slash_for_doc_comments
-    - name: sort_constructors_first
+    - name: '# sort_constructors_first'
     - name: sort_pub_dependencies
-    - name: sort_unnamed_constructors_first
+    - name: '# sort_unnamed_constructors_first'
     - name: super_goes_last
     - name: test_types_in_equals
     - name: throw_in_finally
