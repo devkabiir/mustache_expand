@@ -33,7 +33,7 @@ void main() {
     });
 
     group('context', () {
-      test('+ operator does not override instance data', () {
+      test('+ operator does not overwrite instance data', () {
         Context someContext = Context();
         final testMap = {'someKey': 'some value'};
         final afterAddition = someContext + testMap;
@@ -178,7 +178,7 @@ void main() {
         expect(Context() * {'project_name': 'my_project'}, expected);
       });
 
-      test('does not override existing cases', () {
+      test('does not overwrite existing cases', () {
         expect(Context() * {'key': 'value'}, <String, String>{
           'key': 'value',
           'KEY': 'VALUE',
