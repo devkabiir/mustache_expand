@@ -103,7 +103,8 @@ abstract class ScaffoldCommand extends cr.Command<ExitMessage> {
 
     final loggerName = '[${rec.loggerName.split('.').join('] [')}]';
 
-    String level = '[${rec.level}]';
+    String level = isVerbose ? '[${rec.level}]' : '';
+    String levelEmoji = '';
 
     if (decorated) {
       switch (rec.level.toString()) {
@@ -111,13 +112,13 @@ abstract class ScaffoldCommand extends cr.Command<ExitMessage> {
           level = ansi.wrapWith(level, [
             ansi.lightGreen,
           ]);
-          level = '✔ $level';
+          levelEmoji = '✔  ';
           break;
         case 'INFO':
           level = ansi.wrapWith(level, [
             ansi.lightBlue,
           ]);
-          level = 'ℹ $level';
+          levelEmoji = 'ℹ  ';
           break;
         case 'FINE':
         case 'FINER':
@@ -125,26 +126,26 @@ abstract class ScaffoldCommand extends cr.Command<ExitMessage> {
           level = ansi.wrapWith(level, [
             ansi.lightCyan,
           ]);
-          level = '→ $level';
+          levelEmoji = '→ ';
           break;
         case 'WARNING':
           level = ansi.wrapWith(level, [
             ansi.lightYellow,
           ]);
-          level = '⚠ $level';
+          levelEmoji = '⚠  ';
           break;
         case 'SEVERE':
         case 'SHOUT':
           level = ansi.wrapWith(level, [
             ansi.lightRed,
           ]);
-          level = '❕❕ $level';
+          levelEmoji = '❗  ';
           break;
         case 'FAILED':
           level = ansi.wrapWith(level, [
             ansi.red,
           ]);
-          level = '✖ $level';
+          levelEmoji = '❌  ';
           break;
         default:
           level = ansi.lightGray.wrap(level);
@@ -153,10 +154,10 @@ abstract class ScaffoldCommand extends cr.Command<ExitMessage> {
 
     final message = isVerbose
         ? [
-            '[${rec.time}] $level $loggerName ${rec.message}',
+            '$levelEmoji$level [${rec.time}] $loggerName ${rec.message}',
             includeStackTrace ? 'Stacktrace:\n${rec.stackTrace}' : '',
           ].join('\n')
-        : '$level ${rec.message}';
+        : '$levelEmoji${rec.message}';
 
     return message;
   }
