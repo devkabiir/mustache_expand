@@ -177,7 +177,7 @@ abstract class ScaffoldCommand extends cr.Command<ExitMessage> {
     /// Which helps clear/reset it
     stdout.write('\r');
 
-    Logger.root.level = Level.ALL;
+    Logger.root.level = successLevel;
 
     if (printStackTrace && isVerbose) {
       recordStackTraceAtLevel = Level.WARNING;
