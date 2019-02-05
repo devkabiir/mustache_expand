@@ -12,6 +12,7 @@ import 'package:built_value/serializer.dart';
 import 'package:built_value/standard_json_plugin.dart';
 import 'package:file/file.dart';
 import 'package:file/memory.dart';
+import 'package:io/ansi.dart' as ansi;
 import 'package:logging/logging.dart';
 import 'package:meta/meta.dart';
 import 'package:path/path.dart' as p;
@@ -720,11 +721,12 @@ class TemplateFile {
         ..writeAsStringSync(content);
 
       logger
-        ..info('(${alreadyExists ? 'Overwritten' : 'Written'})'
-            ' ${destination.path}')
+        ..info(
+            ansi.styleBold.wrap('(${alreadyExists ? 'Overwritten' : 'Written'})'
+                ' ${destination.path}'))
         ..finest('(Content)\n$content');
     } else {
-      logger.info('(Skipped) ${destination.path}');
+      logger.info(ansi.styleDim.wrap('(Skipped) ${destination.path}'));
 
       return;
     }
