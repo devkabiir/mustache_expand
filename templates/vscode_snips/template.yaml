@@ -26,11 +26,15 @@ context:
       prefix: built-class
       body:
         - 'abstract class $1 implements Built<$1, $1Builder> {'
+        - ''
         - '$1._();'
+        - ''
         - 'static Serializer<$1> get serializer => _$${1/([A-Z])(.*)/${1:/downcase}$2/g}Serializer;'
-        - 'factory $1([void updates($1Builder b)'
-        - ']) = _$$1;'
+        - ''
+        - 'factory $1([void updates($1Builder b)]) = _$$1;'
+        - ''
         - '$0'
+        - ''
         - '}'
       description: create a built value class
 
@@ -38,12 +42,12 @@ context:
       prefix: library
       scope: dart
       body:
-        - library $1;
+        - library ${1:{{project_name}}.$TM_FILENAME_BASE};
         - ''
         - import 'package:logging/logging.dart';
         - ''
-        - /// Logger for `$1`
-        - final Logger logger = Logger('$1');
+        - /// Logger for `${1:{{project_name}}.$TM_FILENAME_BASE}`
+        - final Logger logger = Logger('${1:{{project_name}}.$TM_FILENAME_BASE}');
         - $0
 
       description: Creates a library with a logger
