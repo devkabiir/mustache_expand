@@ -127,6 +127,7 @@ context:
     - name: flutter_style_todos
     - name: hash_and_equals
     - name: implementation_imports
+    - name: invalid_use_of_protected_member
     - name: invariant_booleans
     - name: iterable_contains_unrelated_type
     - name: join_return_with_assignment
