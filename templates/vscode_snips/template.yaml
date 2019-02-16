@@ -38,6 +38,28 @@ context:
         - '}'
       description: create a built value class
 
+    - name: Built Enum
+      scope: dart
+      prefix: built-enum
+      body:
+        - 'class $1 extends EnumClass {'
+        - ''
+        - '/// Serializer for [$1]'
+        - 'static Serializer<$1> get serializer => '
+        - '_\\$${1/([A-Z])(.*)/${1:/downcase}$2/}Serializer;'
+        - ''
+        - '/// List of valid [$1]s'
+        - 'static BuiltSet<$1> get values => _\\$wire$1Values;'
+        - 'const $1._(String name) : super(name);'
+        - ''
+        - '/// Get [$1] from a value'
+        - 'static $1 valueOf(String name) => _\\$wire$1ValueOf(name);'
+        - ''
+        - '$0'
+        - ''
+        - '}'
+      description: create a built enum class
+
     - name: Create library
       prefix: library
       scope: dart
