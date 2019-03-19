@@ -66,12 +66,12 @@ context:
       prefix: library
       scope: dart
       body:
-        - library ${1:{{project_name}}.$TM_FILENAME_BASE};
+        - library {{project_name}}.$1$TM_FILENAME_BASE;
         - ''
         - import 'package:logging/logging.dart';
         - ''
-        - /// Logger for `${1:{{project_name}}.$TM_FILENAME_BASE}`
-        - final Logger logger = Logger('${1:{{project_name}}.$TM_FILENAME_BASE}');
+        - /// Logger for `{{project_name}}.$1$TM_FILENAME_BASE`
+        - final Logger logger = Logger('{{project_name}}.$1$TM_FILENAME_BASE');
         - $0
 
       description: Creates a library with a logger

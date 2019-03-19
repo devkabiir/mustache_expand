@@ -20,6 +20,7 @@ analyzer:
     avoid_positional_boolean_parameters: error
     dead_code: error
     invalid_use_of_protected_member: error
+    missing_required_param: error
     parameter_assignments: error
     prefer_final_fields: error
     prefer_final_locals: error
